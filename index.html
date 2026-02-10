@@ -2,7 +2,13 @@
 <html>
 <head>
 <title>Lab 4</title>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap" rel="stylesheet">
 
 
 
@@ -10,7 +16,65 @@
 
 </head>
 <body>
-    <h1>Here is some text to make sure path is correct</h1>
+    <header>
+        <div class="row">
+            <h1 id = "pageHeading">All About Anime</h1>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2>What is anime?</h2>
+        <p>
+            Anime is a genre of television adaptations of Japanese manga. These are similar to western comic books, but many feel
+            Anime reaches a broader range of topics and sub-generes. If you want to learn some cool facts about anime, you can click 
+            the button below!
+        </p>
+        <button id="anime-facts">Anime Facts</button>
+    </div>
+
+    <div class="container">
+        <h2>What should I watch?</h2>
+        <p>
+            When it comes to type of anime there are a few main demographic classifications or target audiences. 
+            <ul>
+                <li>
+                    Shonen: targeted at teen boys, typically action-centered. 
+                    <div>
+                        <button id="shonen-button">Show Me Shonen</button>
+                    </div>
+                </li>
+                <li>
+                    Shojo: targeted at teen girls, focused on romance, drama, and relationships.
+                    <div>
+                        <button id="shojo-button">Show Me Shojo</button>
+                    </div>
+                </li>
+                <li>
+                    Seinen: targeted at adult men, featuring complex themes that can be brutal or more mature.
+                    <div>
+                        <button id="seinen-button">Show Me Seinen</button>
+                    </div>
+                </li>
+                <li>
+                    Josei: targeted at adult women, highlighting realisitc relationships and daily life.
+                    <div>
+                        <button id="josei-button">Show Me Josei</button>
+                    </div>
+                </li>
+                <li>
+                    Kodomomuke: targeted at young children, low stress cultivating friendships. 
+                    <div>
+                        <button id="kodomomuke-button">Show Me Kodomomuke</button>
+                    </div>
+                </li>
+            </ul>
+        </p>
+
+
+
+    </div>
+    
 
 
 
@@ -40,6 +104,9 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
