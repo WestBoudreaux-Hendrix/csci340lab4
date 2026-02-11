@@ -7,7 +7,7 @@
     notWork.css("font-family", "Honk")
     notWork.css("font-size", "20px")
     var sadFace =$("<img>")
-    sadFace.attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sad-face_ico.png/640px-Sad-face_ico.png-10-24-12-38-31-576x720.png")
+    sadFace.attr("src", "sadface.png")
     sadFace.css("height", "150px")
     sadFace.css("width", "150px")
 
@@ -15,6 +15,7 @@
   
     $("#anime-facts").on("click", function() {
         $("#anime-facts").append(notWork)
+        $("#anime-facts").append(sadFace)
         // $.ajax({
         // url: "https://placebear.com/200/300",
         
@@ -59,7 +60,7 @@
 
     
     $("#sepuko").on("click", function() {
-        $("#samurai").attr("src", "https://pixnio.com/free-images/2017/10/24/2017-10-24-12-38-31-576x720.png")
+        $("#samurai").attr("src", "grave.png")
     });
 
 
