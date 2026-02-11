@@ -46,6 +46,11 @@
         $("#kodomomuke-button").append(notWork)
     });
 
+    
+    $("#sepuko").on("click", function() {
+        $("#samurai").attr("src", "https://pixnio.com/free-images/2017/10/24/2017-10-24-12-38-31-576x720.png")
+    });
+
 
 
 

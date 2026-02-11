@@ -1,11 +1,12 @@
 #pageHeading{
     color: green;
     font-family: Honk, serif;
-    padding-left: 50;
+    margin: 60px 60px;
+    text-align: center;
 }
 
 body{
-    background-color: darkslategray;
+    background-color: rgb(46, 99, 99);
     font-family: Honk, serif;
 }
 
@@ -27,4 +28,6 @@ ul {
 
 button {
     font-size: 24px;
+    background-color: rgb(194, 4, 194);
 }
+
