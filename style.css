@@ -1,8 +1,8 @@
 #pageHeading{
-    color: green;
     font-family: Honk, serif;
-    margin: 60px 60px;
     text-align: center;
+    margin-bottom: 45px;
+    font-size: 100px;
 }
 
 body{
@@ -11,23 +11,21 @@ body{
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 75px;
 }
 
-h1 {
-    font-size: 75px;
-} 
+
 
 p {
-    font-size: 30px;
+    font-size: 45px;
 }
 
 ul {
-    font-size: 24px;
+    font-size: 40px;
 }
 
 button {
-    font-size: 24px;
+    font-size: 30px;
     background-color: rgb(194, 4, 194);
 }
 

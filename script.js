@@ -54,7 +54,7 @@
 
     $("#kodomomuke-button").on("click", function() {
         $("#kodomomuke-button").append(notWork)
-        $("#josei-button").append(sadFace)
+        $("#kodomomuke-button").append(sadFace)
 
     });
 
