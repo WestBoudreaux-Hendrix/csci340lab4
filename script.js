@@ -25,20 +25,19 @@
         
         success: function(data) {
             $("#anime-facts").html('');
+
             var titleInfo = data["data"][dataIndex]["title"]
             var titleInfotext = $("<p>")
             titleInfotext.text("Anime Title: " + titleInfo + "  ")
             $("#anime-facts").append(titleInfotext);
             console.log(titleInfo);
-            // $("#anime-facts").append("Anime Title: " + titleInfo + "  ")
+
             var animeInfo = data["data"][dataIndex]["synopsis"]
             var animeInfotext = $("<p>")
             animeInfotext.text("Description: " + animeInfo)
              $("#anime-facts").append(animeInfotext);
-            console.log(animeInfo);
-            // $("#anime-facts").append("Description: " + animeInfo)
+            console.log(animeInfo);    
 
-    
             console.log('I succeeded')
             
         },
@@ -49,11 +48,19 @@
     });
 
 
-    $("#shonen-button").on("click", function() {
+    $("#business-button").on("click", function() {
           $.ajax({
         url: "https://corporatebs-generator.sameerkumar.website/",
         
         success: function(data) {
+            $("#business-button").html('');
+            var businessPhrase = data["phrase"];
+            var phraseText = $("<p>")
+            phraseText.text(businessPhrase)
+            $("#business-button").append(phraseText);
+
+
+
             console.log(data["phrase"]);
      
 
