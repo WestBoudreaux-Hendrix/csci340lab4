@@ -50,39 +50,28 @@
 
 
     $("#shonen-button").on("click", function() {
-        $("#shonen-button").append(notWork)
-        $("#shonen-button").append(sadFace)
-    });
-       
-    $("#shojo-button").on("click", function() {
-        $("#shojo-button").append(notWork)
-        $("#shojo-button").append(sadFace)
-    });
+          $.ajax({
+        url: "https://corporatebs-generator.sameerkumar.website/",
         
-    $("#seinen-button").on("click", function() {
-        $("#seinen-button").append(notWork)
-        $("#seinen-button").append(sadFace)
+        success: function(data) {
+            console.log(data["phrase"]);
+     
+
+    
+            console.log('I succeeded')
+            
+        },
+        error: function(xhr,status,error) {
+            console.log(error);
+        }
+        });
+    
     });
        
-    $("#josei-button").on("click", function() {
-        $("#josei-button").append(notWork)
-        $("#josei-button").append(sadFace)
-
-    });
-
-    $("#kodomomuke-button").on("click", function() {
-        $("#kodomomuke-button").append(notWork)
-        $("#kodomomuke-button").append(sadFace)
-
-    });
-
     
     $("#sepuko").on("click", function() {
         $("#samurai").attr("src", "grave.png")
     });
-
-
-
 
 
 
