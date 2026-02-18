@@ -14,20 +14,38 @@
 
   
     $("#anime-facts").on("click", function() {
-        $("#anime-facts").append(notWork)
-        $("#anime-facts").append(sadFace)
-        // $.ajax({
-        // url: "https://placebear.com/200/300",
+        // pick valid dates for it to loop through to pick for the url 
+        var dateSuffix = Math.floor(Math.random() * (23 - 10 + 1)) + 10;
+        var dataIndex = Math.floor(Math.random() * (25 - 0 + 1));
+        console.log(dataIndex)
+        var date = "20" + dateSuffix
+        console.log(date)
+        $.ajax({
+        url: "https://api.jikan.moe/v4/seasons/"+date+"/spring?sfw",
         
-        // success: function(data) {
-        //     console.log(data)
-        //     console.log('I succeeded')
+        success: function(data) {
+            $("#anime-facts").html('');
+            var titleInfo = data["data"][dataIndex]["title"]
+            var titleInfotext = $("<p>")
+            titleInfotext.text("Anime Title: " + titleInfo + "  ")
+            $("#anime-facts").append(titleInfotext);
+            console.log(titleInfo);
+            // $("#anime-facts").append("Anime Title: " + titleInfo + "  ")
+            var animeInfo = data["data"][dataIndex]["synopsis"]
+            var animeInfotext = $("<p>")
+            animeInfotext.text("Description: " + animeInfo)
+             $("#anime-facts").append(animeInfotext);
+            console.log(animeInfo);
+            // $("#anime-facts").append("Description: " + animeInfo)
+
+    
+            console.log('I succeeded')
             
-        // },
-        // error: function(xhr,status,error) {
-        //     console.log(error);
-        // }
-        // });
+        },
+        error: function(xhr,status,error) {
+            console.log(error);
+        }
+        });
     });
 
 
